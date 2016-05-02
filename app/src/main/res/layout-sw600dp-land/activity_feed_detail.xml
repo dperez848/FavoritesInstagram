@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.example.com.test3.FeedDetailActivity">
+
+    <include android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>
+
+    <FrameLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginTop="@dimen/top_activity">
+
+                <TextView android:id="@+id/tittle_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TittlesMedium"
+                    android:text="@string/date_tittle"/>
+                <TextView android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tittle_date"
+                    style="@style/TextMedium"
+                    tools:text="@string/date_tittle"/>
+                <TextView android:id="@+id/tittle_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_date"
+                    style="@style/TittlesMedium"
+                    android:text="@string/author_tittle"/>
+                <TextView android:id="@+id/txt_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tittle_author"
+                    style="@style/TextMedium"
+                    tools:text="@string/date_tittle"/>
+                <TextView android:id="@+id/tittle_tags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_author"
+                    style="@style/TittlesMedium"
+                    android:text="@string/tags_tittle"/>
+                <TextView android:id="@+id/txt_tags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tittle_tags"
+                    style="@style/TextMedium"
+                    tools:text="@string/date_tittle"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/detail_pager"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/circles"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/view_shadow_top" />
+    </FrameLayout>
+</LinearLayout>

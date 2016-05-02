@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi Galeria</string>
+    <string name="tittle">Titulo</string>
+    <string name="image_description">Imagen</string>
+    <string name="title_activity_feed_detail">Detalle</string>
+    <string name="refresh_menu">Refrescar</string>
+    <string name="share_comment">Dale un vistazo a esta asombrosa imagen </string>
+    <string name="date_tittle">Fecha:</string>
+    <string name="author_tittle">Autor:</string>
+    <string name="tags_tittle">Etiquetas:</string>
+    <string name="no_tags">No hay etiquetas</string>
+    <string name="no_internet">Conexion a Internet no encontrada</string>
+    <string name="no_tittle">Sin titulo</string>
+</resources>

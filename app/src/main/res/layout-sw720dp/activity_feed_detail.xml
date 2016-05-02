@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.example.com.test3.FeedDetailActivity">
+
+    <include android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>
+    <include layout="@layout/view_shadow_top" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/top_activity">
+
+            <TextView android:id="@+id/tittle_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Tittles"
+                android:text="@string/date_tittle"/>
+            <TextView android:id="@+id/txt_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tittle_date"
+                android:layout_toEndOf="@+id/tittle_date"
+                android:layout_marginLeft="@dimen/txt_margin"
+                android:layout_marginStart="@dimen/txt_margin"
+                tools:text="@string/date_tittle"/>
+            <TextView android:id="@+id/tittle_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tittle_date"
+                style="@style/Tittles"
+                android:text="@string/author_tittle"/>
+            <TextView android:id="@+id/txt_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tittle_author"
+                android:layout_toEndOf="@+id/tittle_author"
+                android:layout_marginLeft="@dimen/txt_margin"
+                android:layout_marginStart="@dimen/txt_margin"
+                android:layout_below="@+id/txt_date"
+                tools:text="@string/date_tittle"/>
+            <TextView android:id="@+id/tittle_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tittle_author"
+                style="@style/Tittles"
+                android:text="@string/tags_tittle"/>
+            <TextView android:id="@+id/txt_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tittle_tags"
+                android:layout_toEndOf="@+id/tittle_tags"
+                android:layout_marginLeft="@dimen/txt_margin"
+                android:layout_marginStart="@dimen/txt_margin"
+                android:layout_below="@+id/txt_author"
+                tools:text="@string/date_tittle"/>
+        </RelativeLayout>
+        <include layout="@layout/view_shadow_top" />
+    </FrameLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/detail_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+    <LinearLayout
+        android:id="@+id/circles"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</LinearLayout>

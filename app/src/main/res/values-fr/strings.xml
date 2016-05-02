@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ma galerie</string>
+    <string name="tittle">Iota</string>
+    <string name="image_description">Image</string>
+    <string name="title_activity_feed_detail">Détail</string>
+    <string name="refresh_menu">Rafraîchir</string>
+    <string name="share_comment">Jetez un oeil à cette photo impressionnante </string>
+    <string name="date_tittle">Date:</string>
+    <string name="author_tittle">Auteur:</string>
+    <string name="tags_tittle">Mots clés:</string>
+    <string name="no_tags">Pas de tags</string>
+    <string name="no_internet">Aucune connexion Internet détectée</string>
+    <string name="no_tittle">Pas de iota</string>
+</resources>

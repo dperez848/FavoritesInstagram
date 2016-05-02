@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Gallery App</string>
+    <string name="tittle">tittle</string>
+    <string name="image_description">Image</string>
+    <string name="title_activity_feed_detail">FeedDetail</string>
+    <string name="refresh_menu">Refresh</string>
+    <string name="share_comment">Take a look at this awesome photo </string>
+    <string name="date_tittle">Date:</string>
+    <string name="author_tittle">Author:</string>
+    <string name="tags_tittle">Tags:</string>
+    <string name="no_tags">No tags</string>
+    <string name="no_internet">No internet connection detected</string>
+    <string name="no_tittle">No tittle</string>
+</resources>
