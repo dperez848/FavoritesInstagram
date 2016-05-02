@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements FeedListAdapter.O
                         mRecyclerAdapter.notifyChange();
                         mPagerAdapter.notifyDataSetChanged();
                         mFeedPager.setCurrentItem(0);
-                        progressBar.setVisibility(View.INVISIBLE);
+                        progressBar.setVisibility(View.INVISIBLE); 
                         mSwipe.setRefreshing(false);
                     } else {
                         Log.d(TAG, "Codigo: " + response.code());
